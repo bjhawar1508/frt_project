@@ -6,6 +6,36 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7)),url();
+    background-image: url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+nav{
+    display: flex;
+    padding: 2% 4% ;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav img{
+    width: 450px;
+
+
+
+}
+
+.nav-limks{
+        flex: 1;
+        text-align: right;
+
+}
+
+.nav-limks ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 20px 22px;
+        position: relative;
 
 }
