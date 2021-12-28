@@ -13,7 +13,8 @@
     <section class="header">
             <nav>
                 <a href="index.html"><img src="logo.PNG"></a>       
-                <div class="nav-links">
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" on click="hideMenu()"></i>
                     <ul>
                         <li><a href="">HOME</a></li>
                         <li><a href="">GENERAL NEWS</a></li>
@@ -24,6 +25,7 @@
                         <li><a href="">CONTACT US</a></li>
                     </ul>
                 </div>  
+                <i class="fa fa-bars"  on click="showMenu()"></i>
             </nav>
         
         <div class="text-box">
@@ -43,6 +45,49 @@
 
     </section> 
 
+<!---Category of News -->
+
+    <section class="category">
+        <h1>Different Categories of News we Provide.</h1>
+            <p>
+various Categories of news are as follows
+
+            </p>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!----- JAVASCRIPT to toggle menu ------>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+
+            navLinks.style.right="0";
+
+        }
+
+        function hideMenu(){
+
+            navLinks.style.right="-200px";
+
+        }
+
+    </script>
 
 </body> 
 </html>
